@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Field Inventory</title>
+        <style>
+        body{
+            font-family:Arial,sans-serif;
+            line-height:1.5;
+            max-width:80rem;
+            margin:auto;
+            padding:1rem;
+            color:#191919;
+        }
+        table{
+            width:100%;
+            border-collapse:collapse;
+        }
+        th,td{
+            padding:.6rem;
+            border:1px solid #999;
+            text-align:left;
+            vertical-align:top;
+        }
+        th{
+            background:#f1f1f1;
+        }
+        </style>
+        </head>
+        <body>
+            <h1>F2 · Task and Data Plan</h1>
+            <p>Duplicate rows as needed. Justify every collected value.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Visible label / question</th>
+                        <th>Why necessary now?</th>
+                        <th>Required?</th>
+                        <th>Native control/type</th>
+                        <th>Submitted name/value</th>
+                        <th>Autocomplete/inputmode</th>
+                        <th>Constraint/instruction</th>
+                        <th>Sensitivity and minimization decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Enter Name</td>
+                        <td>Need a name for each application to organize them</td>
+                        <td>Yes</td>
+                        <td>Text entry box</td>
+                        <td>Hannah Groves</td>
+                        <td>name</td>
+                        <td>Must enter some amount of text</td>
+                        <td>Replace</td>
+                    </tr>
+                    <tr>
+                        <td>Enter Email</td>
+                        <td>Need an email to contact the form submitter</td>
+                        <td>Yes</td>
+                        <td>Email entry box</td>
+                        <td>test@test.com</td>
+                        <td>email</td>
+                        <td>must enter text with "@" in the middle</td>
+                        <td>Replace</td>
+                    </tr>
+                    <tr>
+                        <td>Enter Phone Number</td>
+                        <td>Optional alternate contact method</td>
+                        <td>No</td>
+                        <td>Tel entry box</td>
+                        <td>000-000-0000</td>
+                        <td>tel</td>
+                        <td>None</td>
+                        <td>Replace</td>
+                    </tr>
+                    <tr>
+                        <td>Baby Selection</td>
+                        <td>Need to know what baby they want to adopt</td>
+                        <td>Yes</td>
+                        <td>Radio selection</td>
+                        <td>Default selects "Any baby ball"</td>
+                        <td>Default selects "Any baby ball"</td>
+                        <td>Must select an option</td>
+                        <td>Replace</td>
+                    </tr>
+                    <tr>
+                        <td>Candidate Explanation</td>
+                        <td>Need to know if they'd be a good pet owner</td>
+                        <td>Yes</td>
+                        <td>Text entry box</td>
+                        <td>Test text</td>
+                        <td>N/A</td>
+                        <td>Must enter some amount of text</td>
+                        <td>Replace</td>
+                    </tr>
+                    <tr>
+                        <td>Required Deposit</td>
+                        <td>Are they willing to commit to a deposit (and therefore are serious about adopting)</td>
+                        <td>Yes</td>
+                        <td>Checkbox selection</td>
+                        <td>Check yes</td>
+                        <td>N/A</td>
+                        <td>Must check yes</td>
+                        <td>Replace</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+        </html>

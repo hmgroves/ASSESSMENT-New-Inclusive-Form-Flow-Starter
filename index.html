@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Dongle&family=Sniglet:wght@400;800&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+        <title>Inclusive Form Flow</title><link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="page-header">
+            <p class="eyebrow">Application Request to</p>
+            <h1>Adopt a Baby Ball Python</h1>
+            <p class="lede">Fill out this 2min form to be considered to adopt from the next clutch. After submission you will receive an email within 48 hours letting you know of your application status.
+            </p>
+        </header>
+        <main>
+            <section id="expectations">
+                <h2>F1 · Purpose and Expectations</h2>
+                <p>Please fill out all fields unless otherwise stated. All information submitted in this form will be kept confidential.</p>
+            </section>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>F3 · Contact information</legend>
+                    <p class="help">Please use an actual name and not your social media handle.</p>
+                    <div class="field">
+                        <label for="name">Full Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone Number (optional)</label>
+                        <input id="phone" name="phone" type="tel" autocomplete="tel">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>F3 · Baby Selection</legend>
+                    <p class="help">Please select what baby you are interested in.</p>
+                    <label class="choice"><input type="radio" name="request_type" value="option-a"> Male normal ball</label>
+                    <label class="choice"><input type="radio" name="request_type" value="option-b"> Female normal ball</label>
+                    <label class="choice"><input type="radio" name="request_type" value="option-c"> Male pinstripe morph ball</label>
+                    <label class="choice"><input type="radio" name="request_type" value="option-d"> Female pinstripe morph ball</label>
+                    <label class="choice"><input type="radio" name="request_type" value="option-e" checked> Any baby ball</label>
+                </fieldset>
+                    <div class="field">
+                        <label for="details">Request details</label>
+                        <p class="help" id="details-help">Please explain why you are a good candidate to adopt a baby ball python within the 500 character limit.</p>
+                        <textarea id="details" name="details" aria-describedby="details-help" maxlength="500" required></textarea>
+                    </div>
+                    <div id="deposit">
+                        <legend>Do you agree to a $50 nonrefundable deposit?</legend>
+                        <label class="choice"><input type="checkbox" name="deposit" required> Yes</label>
+                    </div>
+                    <button type="submit">Submit Application</button>
+                </form>
+                <section id="states">
+                    <h2>F5 · State and Recovery Specimen</h2>
+                    <p>Document default, focus, required, valid, invalid, disabled, and a static server-returned error. Keep this section separate from the primary blank form when necessary to avoid misleading users.</p>
+                    <div class="error-summary">
+                        <h3>There is a problem with your submission</h3>
+                        <p><a href="#error-example">Email address needs attention</a></p>
+                    </div>
+                    <div class="field-error">
+                        <label for="error-example">Email address</label>
+                        <input id="error-example" type="email" value="alex.example" aria-invalid="true" aria-describedby="error-message">
+                        <p id="error-message"><strong>Error:</strong> Enter an address in the format name@example.com</p>
+                    </div>
+                    <div class="error-summary">
+                        <h3>There is a problem with your submission</h3>
+                        <p><a href="#deposit">Deposit Check needs attention</a></p>
+                    </div>
+                    <div class="field-error">
+                        <label for="error-example">Deposit Check</label>
+                        <p id="error-message"><strong>Error:</strong> Must agree to $50 nonrefundable deposit</p>
+                    </div>
+                    <button type="button" disabled>Start a new Application</button>
+                </section>
+                <section id="documentation">
+                    <h2>F2 and F6 · Planning and Evidence</h2>
+                    <p>Link your field inventory, state matrix, fictional test-data list, completed test record, and AI disclosure.</p>
+                </section>
+            </main>
+        </body>
+        </html>
