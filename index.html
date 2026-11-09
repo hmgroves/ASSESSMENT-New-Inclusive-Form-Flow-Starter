@@ -20,7 +20,7 @@
                 <h2>F1 · Purpose and Expectations</h2>
                 <p>Please fill out all fields unless otherwise stated. All information submitted in this form will be kept confidential.</p>
             </section>
-            <form action="" method="get">
+            <form method="get">
                 <fieldset>
                     <legend>F3 · Contact information</legend>
                     <p class="help">Please use an actual name and not your social media handle.</p>
@@ -34,7 +34,7 @@
                     </div>
                     <div class="field">
                         <label for="phone">Phone Number (optional)</label>
-                        <input id="phone" name="phone" type="tel" autocomplete="tel">
+                        <input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="12">
                     </div>
                 </fieldset>
                 <fieldset>
@@ -49,10 +49,10 @@
                     <div class="field">
                         <label for="details">Request details</label>
                         <p class="help" id="details-help">Please explain why you are a good candidate to adopt a baby ball python within the 500 character limit.</p>
-                        <textarea id="details" name="details" aria-describedby="details-help" maxlength="500" required></textarea>
+                        <textarea id="details" name="details" aria-describedby="details-help" minlength="10" maxlength="500" required></textarea>
                     </div>
                     <div id="deposit">
-                        <legend>Do you agree to a $50 nonrefundable deposit?</legend>
+                        <p class="help">Do you agree to a $50 nonrefundable deposit?</p>
                         <label class="choice"><input type="checkbox" name="deposit" required> Yes</label>
                     </div>
                     <button type="submit">Submit Application</button>
@@ -74,15 +74,30 @@
                         <p><a href="#deposit">Deposit Check needs attention</a></p>
                     </div>
                     <div class="field-error">
-                        <label for="error-example">Deposit Check</label>
-                        <p id="error-message"><strong>Error:</strong> Must agree to $50 nonrefundable deposit</p>
+                        <label>Deposit Check</label>
+                        <p id="error-message2"><strong>Error:</strong> Must agree to $50 nonrefundable deposit</p>
                     </div>
                     <button type="button" disabled>Start a new Application</button>
                 </section>
                 <section id="documentation">
                     <h2>F2 and F6 · Planning and Evidence</h2>
                     <a href="field-inventory-template.html">Link to field inventory table</a>
-                        <p>, state matrix, fictional test-data list, completed test record, and AI disclosure. </p>
+                    <p><a href="testing-proofs/html01.png">First HTML Validation returned these errors.</a> Here's the <a href="testing-proofs/html02.png">HTML Validation after fixing them.</a></p>
+                    <p></p><a href="testing-proofs/css.png">CSS Validation</a>
+                    <p>All elements of the form can be accessed with a keyboard. <a href="testing-proofs/tab01.png">Here's an element being filled out after tabbing to it.</a> 
+                        <a href="testing-proofs/tab02.png">Heres the form being submitted after tabbing to it.</a></p>
+                    <p><a href="testing-proofs/aria.png">Accessible-name/group inspection for representative text.</a></p>
+                    <p><a href="testing-proofs/text.png">Empty required textbox</a></p>
+                    <p><a href="testing-proofs/email.png">Malformed email address</a></p>
+                    <p><a href="testing-proofs/min.png">Boundary-minimum text entry</a></p>
+                    <p><a href="testing-proofs/max.png">Boundary-maximum text entry</a></p>
+                    <p><a href="testing-proofs/valid.png">All valid entries</a></p>
+                    <p><a href="testing-proofs/320px.png">320px viewport check</a></p>
+                    <p><a href="testing-proofs/768px.png">768px viewport check</a></p>
+                    <p><a href="testing-proofs/1280px.png">1280px viewport check</a></p>
+                    <p><a href="testing-proofs/200.png">200% viewport check</a></p>
+                    <p><a href="testing-proofs/submit.png">URL at the top shows correctly submitted information</a></p>
+                        <p>AI disclosure: No AI was used.</p>
                 </section>
             </main>
         </body>

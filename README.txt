@@ -12,11 +12,12 @@ START HERE: This folder is the required scaffold for the Module 3 Assessment, no
     rubric, and AI boundaries.
 
 
+For Table:
+
 contact information
     name, email, cell (optional)
-is enclosure set up?
 what kind of baby do you want
     normal, morph, male, female, any
-explain why you are a good candadate for adoption
+explain why you are a good candidate for adoption
 do you agree to a nonrefundable down payment
     $50
